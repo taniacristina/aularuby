@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Autor:</strong>
+  <%= @notadeaula.autor %>
+</p>
+
+<p>
+  <strong>Disciplina:</strong>
+  <%= @notadeaula.disciplina %>
+</p>
+
+<p>
+  <strong>Ano:</strong>
+  <%= @notadeaula.ano %>
+</p>
+
+<p>
+  <strong>Semestre:</strong>
+  <%= @notadeaula.semestre %>
+</p>
+
+<p>
+  <strong>Data:</strong>
+  <%= @notadeaula.data %>
+</p>
+
+<p>
+  <strong>Titulo:</strong>
+  <%= @notadeaula.titulo %>
+</p>
+
+<p>
+  <strong>Texto:</strong>
+  <%= @notadeaula.texto %>
+</p>
+
+<%= link_to 'Edit', edit_notadeaula_path(@notadeaula) %> |
+<%= link_to 'Back', notadeaulas_path %>

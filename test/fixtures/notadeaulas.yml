@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  autor: MyString
+  disciplina: MyString
+  ano: 1
+  semestre: 1
+  data: 2017-12-13
+  titulo: MyString
+  texto: MyText
+
+two:
+  autor: MyString
+  disciplina: MyString
+  ano: 1
+  semestre: 1
+  data: 2017-12-13
+  titulo: MyString
+  texto: MyText

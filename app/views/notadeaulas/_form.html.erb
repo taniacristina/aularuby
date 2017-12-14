@@ -1,0 +1,45 @@
+<%= form_for(@notadeaula) do |f| %>
+  <% if @notadeaula.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@notadeaula.errors.count, "error") %> prohibited this notadeaula from being saved:</h2>
+
+      <ul>
+      <% @notadeaula.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :autor %><br>
+    <%= f.text_field :autor %>
+  </div>
+  <div class="field">
+    <%= f.label :disciplina %><br>
+    <%= f.text_field :disciplina %>
+  </div>
+  <div class="field">
+    <%= f.label :ano %><br>
+    <%= f.number_field :ano %>
+  </div>
+  <div class="field">
+    <%= f.label :semestre %><br>
+    <%= f.number_field :semestre %>
+  </div>
+  <div class="field">
+    <%= f.label :data %><br>
+    <%= f.date_select :data %>
+  </div>
+  <div class="field">
+    <%= f.label :titulo %><br>
+    <%= f.text_field :titulo %>
+  </div>
+  <div class="field">
+    <%= f.label :texto %><br>
+    <%= f.text_area :texto %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
